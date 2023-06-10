@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
@@ -8,16 +9,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weight Converter</title>
 </head>
+
 <body>
   <h2>Weight Converter</h2>
   <p>Enter a value in the kilograms field to convert:</p>
   <p>
     <label>Kilograms</label>
-    <input id="kilograms" type="number" placeholder="Kilograms" oninput="kiloweightConvert(this.value)" onchange="kiloweightConverter(this.value)">
+    <input id="kilograms" type="number" placeholder="Kilograms" oninput="kiloweightConvert(this.value)"
+      onchange="kiloweightConverter(this.value)">
   </p>
   <p>Pounds: <span id="pounds"></span></p>
   <p>Ounces: <span id="ounces"></span></p>
   <p>Grams: <span id="grams"></span></p>
   <p>Stones: <span id="stones"></span></p>
+  <div class="container">
+    <h2>Temperature Converter</h2>
+    <div class="converter-row">
+      <div class="col">
+        <label>Fahrenheit</label>
+        <input type="number" id="fahrenheit">
+      </div>
+
+      <div class="col">
+        <label>Celsius</label>
+        <input type="number" id="celsius">
+      </div>
+
+      <div class="col">
+        <label>Kelvin</label>
+        <input type="number" id="kelvin">
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
