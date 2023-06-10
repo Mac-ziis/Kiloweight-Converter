@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converter</title>
+</head>
+<body>
+  <h2>Weight Converter</h2>
+  <p>Enter a value in the kilograms field to convert:</p>
+  <p>
+    <label>Kilograms</label>
+    <input id="kilograms" type="number" placeholder="Kilograms" oninput="kiloweightConvert(this.value)" onchange="kiloweightConverter(this.value)">
+  </p>
+  <p>Pounds: <span id="pounds"></span></p>
+  <p>Ounces: <span id="ounces"></span></p>
+  <p>Grams: <span id="grams"></span></p>
+  <p>Stones: <span id="stones"></span></p>
+</body>
+</html>
